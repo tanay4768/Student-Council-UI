@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college</title>
+    <style>
+      div.background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, #ffff6d, #79f9f9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.com-container{
+    width: 60vw;
+    height: 60vh;
+    background-color: rgb(151, 239, 255);
+    border: solid black;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 5vh;
+    font-size: 3.5vh;
+    border-radius: 4%;
+  color: #000;
+  overflow: auto;
+   
+
+}
+div.subm-button{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: flex-end;
+}
+input.s{
+    height: 3.5vh;
+    width: 36vw;
+    border-radius: 10px;
+}
+select {
+    width: 36vw; /* Change this value to adjust the width */
+    height: 4vh; /* Change this value to adjust the height */
+    padding: 5px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add border for clarity */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+select:hover{
+    transform: scale(1.1);
+}
+input.submits{
+    width: 10vw;
+    height: 4vh;
+    border-radius: 20px;
+    font-size: 2vh;
+    background-color: rgb(243, 255, 76);
+}
+input.submits:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+textarea.sk{
+    overflow: hidden;
+    width:36vw;
+    height: 3.4vh;
+    padding-left: 1vw;
+text-align: left;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    background-color: white;
+}
+div.f{
+    margin-top: 2vh;
+}
+div.s{
+    width: 30vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+    </style>
+
+</head>
+<body>
+    <div class="background">
+
+
+
+        <div class="com-container">
+            
+                    <div class="form">
+                        <form action="/submit-form" method="post"></form>
+                <label for="Complaint">Area of Complaint:</label>
+                <textarea name="" id=""  placeholder="College or class" class="sk" disabled>College or Class</textarea>
+                  
+                  <div class="f">
+                  <label for="subject" >Subject:</label><br>
+                  <select name="subject" aria-placeholder="Select"  >
+                    <option value="Area of complaint1">Raging</option>
+                    <option value="Area of complaint1">Faculty/Staff behaviour</option>
+                    <option value="Area of complaint5">Cleanliness</option>
+                    <option value="Area of complaint5">Insufficient/Faulty instrument</option>
+                    <option value="Area of complaint4">Other</option>
+                  </select>
+                </div>
+                <div class="f">
+                  <label for="email" >Email:</label><br>
+                <input type="email" id="email" name="email" size="40" class="s" required></div>
+                <div class="f">
+                <label for="Description" >Description:</label><br>
+                <textarea name="Description" id="des"  placeholder="optional" class="sk" ></textarea>
+            </div>
+
+                
+            </div>
+                <div class="subm-button">
+                <input type="submit" value="Submit" class="submits">
+            </div>
+            </div>
+            
+        </form>
+</body>
+</html>
